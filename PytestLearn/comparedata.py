@@ -1,0 +1,2 @@
+def printmessgae():
+    print("hello")
