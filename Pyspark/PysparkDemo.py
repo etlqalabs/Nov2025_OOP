@@ -5,6 +5,7 @@ from pyspark.sql import SparkSession
 spark_conn = SparkSession.builder.appName("Pyspark demo") \
     .master("local[*]").getOrCreate()
 
+
 df_spark = spark_conn.read.csv("Data/emp.csv",header=True)
 time.sleep(10)
 #df_spark.printSchema()
